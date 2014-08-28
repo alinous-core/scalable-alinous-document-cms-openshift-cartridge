@@ -30,11 +30,9 @@ Subscribes:
   set-db-connection-info:
     Type: "NET_TCP:db:connection-info"
     Required: false
-  set-nosql-db-connection-info:
-    Type: "NET_TCP:nosqldb:connection-info"
-    Required: false
-  set-jdbc-info:
-    Type: "NET_TCP:jdbc"
+  set-postgres-connection-info:
+    Type: "NET_TCP:db:postgres"
+    Required : false
 Group-Overrides:
   - components:
     - "tomcat-7.0"
