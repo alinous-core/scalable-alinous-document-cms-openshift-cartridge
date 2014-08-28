@@ -15,7 +15,7 @@ Provides:
   - alinous
 Scaling:
   Min: 1
-  Max: 1
+  Max: -1
 Publishes:
   get-internal-uri:
     Type: "NET_TCP:http"
