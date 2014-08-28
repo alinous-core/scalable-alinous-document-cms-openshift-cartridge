@@ -1,10 +1,10 @@
-Name: alinouscms
+Name: scalable_alinouscms
 Cartridge-Short-Name: ALINOUS
 Cartridge-Version: 1.0.1
 Cartridge-Vendor: tomohiro_iizuka
 Display-Name: Alinous Document Cms Cartridge for Openshift
 Version: 1.0
-Source-Url: https://github.com/alinous-core/alinous-document-cms-cartridge/archive/master.zip
+Source-Url: https://github.com/alinous-core/scalable-alinous-document-cms-openshift-cartridge/archive/master.zip
 Categories:
   - service
   - web_framework
@@ -48,9 +48,6 @@ Endpoints:
       - Frontend:      ""
         Backend:       ""
         Options:       { "websocket": true }
-      - Frontend:      "/health"
-        Backend:       "/$OPENSHIFT_REPO_DIR/.openshift/configuration/health.html"
-        Options:       { "file": 1}
   - Private-IP-Name:   IP
     Private-Port-Name: JPDA_PORT
     Private-Port:      8787

@@ -80,6 +80,11 @@ function start() {
     
     client_message "Start tomcat and alinous server";
     
+    if [ -z "$OPENSHIFT_POSTGRESQL_DB_USERNAME" ]; then
+         client_message "OPENSHIFT_POSTGRESQL_DB_USERNAME is not set";
+         return 0
+    fi
+
     SHELL_DIR=${OPENSHIFT_ALINOUS_DIR}tomcat/bin
 
     ${SHELL_DIR}/startup.sh > ${OPENSHIFT_ALINOUS_DIR}logs/tomcat.log 2>&1 &
